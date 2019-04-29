@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+
+   <style>
+   *{
+   	margin: 0;
+   	padding: 0;
+   }
+ body{
+ 	background: #ccc;
+ }
+
+   	.head{
+     font-size: 0.65rem;
+     height: 4.3rem;
+     width: 16.55rem;
+     background: #38474E;
+     line-height: 2.35rem;
+     margin: 0 auto;
+     position: relative;
+     box-shadow:0 1px 2px 1px #B9B9B9;
+}
+ 
+    .head .wd{
+     color: #fff;
+     margin-left: 2.475rem;
+}
+ 
+   .head .icon-jiantou{
+     color: #232B2F;
+     margin-right: 0.625rem;
+}
+  .head .icon-gouwuche{
+     color: #232B30;
+     float: right;
+     margin-right: 0.5rem;
+}
+ .icon-gouwuche .shu{
+     background: #fff;
+     width: 0.7rem;
+     height: 0.45rem;
+     border-radius: 0.2rem;
+     font-size: 0.3rem;
+     float: right;
+     margin-top: 0.75rem;
+     line-height: 0.45rem;
+     text-align: center;
+     color: #38474F;
+}
+.head ul{
+	list-style: none;
+	height: 1.575rem ;
+}
+.head .head_ul li{
+     float: left;
+     font-size: 0.5rem;
+     color:#fff;
+}
+ .head .ul_1{
+     width: 4.65rem;
+     	height: 1.575rem ;
+     padding: 0 1.125rem 0 1.4rem;
+     margin-left: 0.5rem;
+     margin-right: 0.425rem;
+      background: #2D393F;
+      border-radius: 3px;
+
+}
+ .head .ul_2{
+     width: 3.55rem;
+     	height: 1.575rem ;
+     padding: 0 1.575rem 0 2.05rem;
+     margin-left: 0.425rem;
+     background: #F5846A;
+      border-radius: 3px;
+
+}
+.nei{
+	text-align: center;
+	margin-top: 0.6rem;
+	position: relative;
+
+}
+ img{
+ 	width: 14.8rem;
+ 	height: 14.8rem;
+ }
+ .neik{
+ 	position: absolute;
+ 	bottom: 0; left: 0.6rem;
+ 	height: 3rem;
+	width: 14.8rem;
+	display: inline-block;
+	text-align: center;
+ }
+.wen{
+	line-height: 3rem;
+	margin-right: 5px;
+}
+.nei_tu{
+	background: #BFBFC3;
+	width: 2.825rem;
+ height: 1.4rem;
+ padding: 0.5rem 0.7rem;
+ border-radius: 3px;
+ color: #fff;
+ margin-bottom: 1rem;
+}
+.nei_ul{
+     height: 0.25rem;
+     width: 1.25rem;
+     position: absolute;
+     left: 0.5rem;
+     bottom: 4rem;
+}
+ 
+.nei_ul li{
+     list-style: none;
+     width: 0.25rem;
+     height: 0.125rem;
+     background: #D0D2D3;
+     float: left;
+     margin-right: 0.125rem;
+     	border-radius: 3px;
+
+}
+.nei_ul .ul_li1{
+	background: #67B0D6;
+}
+
+.de{
+	margin: 20px auto;
+     height: 2.5rem;
+     width: 14.775rem;
+     background: #fff;
+     box-shadow:0 1px 2px 1px #B9B9B9;
+
+}
+.de span{
+	line-height: 3rem;
+
+}
+.de .icon-add{
+ margin-left: 20px;
+}
+.de .de_3{
+	margin-left: 2.75rem;
+}
+
+.colour{
+    width: 14.775rem;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+}
+.col_ul{
+    display: inline-block;
+    text-align: center;
+
+}
+.col_ul li{
+    float: left;
+    border-radius: 3px;
+}
+.col_ul .li1{
+    width: 1.775rem;
+    height: 1.775rem;
+ background: #EFC9CD;
+ position: relative;
+}
+.col_ul .li1 span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -14px; margin-top: -14px;
+}
+.col_ul .li2{
+     width: 1.775rem;
+     height: 1.775rem;
+     background: #AF6779;
+     margin: 0 0.7rem;
+}
+ .col_ul .li3{
+     width: 1.775rem;
+     height: 1.775rem;
+     background: #87A5B1;
+}
+ .br{
+     width: 11.35rem;
+     height: 0.05rem;
+     background: #DBDBDB;
+}
+.col_ul1{
+     display: inline-block;
+    text-align: center;
+
+
+}
+
+ .col_ul1 li{
+     float: left;
+     border-radius: 3px;
+}
+ .col_ul1 li{
+     width: 1.775rem;
+     height: 1.775rem;
+     background: #D9D9DD;
+     line-height: 1.775rem;
+}
+ .col_ul1 .col_2li{
+     width: 1.775rem;
+     height: 1.775rem;
+     margin: 0 0.625rem;
+     color: #fff;
+     background: #67AFD5;
+}
+ .col_ul1 .col_4li{
+     width: 1.775rem;
+     height: 1.775rem;
+     margin: 0 0.625rem;
+}
+.cart{
+     width: 6.925rem;
+     height: 1.5rem;
+     text-align: center;
+     line-height: 1.5rem;
+     background: #394143;
+     margin: 0 auto;
+     color: #fff;
+     border-radius: 0.075rem;
+}
+.on{
+    text-align: center;
+}
+
+ .on span{
+     display: inline-block;
+     vertical-align: middle;
+     margin-left: 10px;
+     width: 10.75rem;
+     height: 0.05rem;
+     background: #000;
+}
+.foot{
+    margin: 0 auto;
+    text-align: center;
+    height: 74px;
+    line-height: 74px;
+}
+.foot li{
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+}
+.foot .f_li1{
+    background: #56C2E9;
+}
+.foot .f_li2{
+    background: #56C2E9;
+   margin: 0 0.2rem;
+}
+.foot .f_li3{
+    background: #56C2E9;
+}
+.foot ul .dui1{
+    width: 1.75rem;
+    height: 0.975rem;
+    line-height: 0.975rem;
+    border-radius: 0;
+    background: #fff;
+    font-size: 16px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+	<div class="head">
+	<div class="head_"> 
+		<span class="iconfont icon-jiantou"></span>
+		<span class="wd">Woman, Dresses</span> 
+		<div class="iconfont icon-gouwuche"> <span class="shu">3</span></div> 
+	</div>
+<ul class="head_ul">
+	<li class="ul_1">add to wishlist</li>
+	<li class="ul_2">add to cart</li>
+</ul>
+	</div>
+
+	<div class="nei">
+		<img src="shi.jpg">
+		<div class="neik">
+			<span class="wen">adlk akdp akpd</span>
+			<span class="nei_tu">$605,00</span>
+			<ul class="nei_ul">
+				<li class="ul_li1"></li>
+				<li class="ul_li2"></li>
+				<li class="ul_li3"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="de">
+		<span class="iconfont icon-add"></span>
+		<span class="de_3">asdkj kadk mfa</span>
+	</div>
+
+    <div class="colour">
+        <p class="col_p"><span class="iconfont icon-shuidi"></span>colour:</p>
+        <p class="col_p1">Choose a colour for item</p>
+        <ul class="col_ul">
+            <li class="li1"><span class="iconfont icon-wei-"></span></li>
+            <li class="li2"></li>
+            <li class="li3"></li>
+        </ul>
+        <p class="br"></p>
+        <p class="size"><span class="iconfont icon-hangeryijia"></span>size:</p>
+        <p>Size available for this item</p>
+        <ul class="col_ul1">
+            <li class="col_1li">6</li>
+            <li class="col_2li">8</li>
+            <li class="col_3li">10</li>
+            <li class="col_4li">14</li>
+            <li class="col_5li">18</li>
+        </ul>
+    </div>
+
+    <div class="cart">add as dfdf</div>
+    <p class="on"> sd afdk<span></span></p>
+
+<div class="foot">
+    <ul>
+    <li class="f_li1 iconfont icon-gezi"></li>
+    <li class="dui1">1</li>
+    <li class="f_li2 iconfont icon-gezi"></li>
+    <li class="dui1">2</li>
+    <li class="f_li3 iconfont icon-gezi"></li>
+    <li class="dui1">3</li>
+    </ul>
+</div>
+
+</body>
+</html>
